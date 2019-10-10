@@ -7,6 +7,7 @@ public class App {
         s1.Ordenar(vetorTeste);
         for (int e : vetorTeste) {
             System.out.println(e);
+            System.out.println("Fodase");
         }
 
      System.out.println("Contabilizadas " + s1.getContador() + " comparação(ções)");
