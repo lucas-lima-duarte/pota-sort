@@ -15,7 +15,7 @@ public class BubbleSort {
     }
 
     // *** Métodos
-    public void Incrementa(){
+    private void Incrementa(){
         contador++;
     }
 
@@ -34,9 +34,9 @@ public class BubbleSort {
 
         for (int i = (ultimo - 1); i >= primeiro; i--) {
             for (int j = primeiro; j <= i; j++) {
+                Incrementa();
                 if (vetor[j] > vetor[j+1]) {
                     TrocaElementos(j, (j+1), vetor);
-                    Incrementa();
                 }
             }
         }

@@ -2,13 +2,13 @@
 public class App {
     public static void main(String[] args) {
 
-        int [] vetorTeste = {1,2,3,4,6,5};
-        BubbleSort b1 = new BubbleSort();
-        b1.Ordenar(vetorTeste);
+        int [] vetorTeste = {1,2,3,4,5,6,9,8};
+        SelectionSort s1 = new SelectionSort();
+        s1.Ordenar(vetorTeste);
         for (int e : vetorTeste) {
             System.out.println(e);
         }
 
-     System.out.println(b1.getContador());
+     System.out.println("Contabilizadas " + s1.getContador() + " comparação(ções)");
     }
 }
