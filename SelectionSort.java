@@ -5,7 +5,7 @@ public class SelectionSort {
   private int contador;
 
   // *** Construtor
-  public BubbleSort(){
+  public SelectionSort(){
       contador = 0;
   }
   // *** Get
