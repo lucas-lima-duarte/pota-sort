@@ -9,7 +9,7 @@ public class App {
         Count count = new Count();
 
         System.out.println("------------------ Calculando vetor de 1000 posiçoes . . . ------------------");
-        int[] vetor = new int[1000];
+        int[] vetor = new int[10];
         int[] cobaia = new int[vetor.length];
 
         for (int i = 0; i <= 4; i++) {
@@ -17,13 +17,20 @@ public class App {
                 vetor[j] = j;
             }
             embaralhar(vetor);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             bubble.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
+            mostraVetor(cobaia);
             insertion.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
+            mostraVetor(cobaia);
             merge.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
+            mostraVetor(cobaia);
             count.Ordenar(cobaia);
         }
 
