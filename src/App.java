@@ -8,8 +8,10 @@ public class App {
         Merge merge = new Merge();
         Count count = new Count();
 
+        System.out.println("Ola");
+
         System.out.println("------------------ Calculando vetor de 1000 posiçoes . . . ------------------");
-        int[] vetor = new int[10];
+        int[] vetor = new int[1000];
         int[] cobaia = new int[vetor.length];
 
         for (int i = 0; i <= 4; i++) {
@@ -22,15 +24,12 @@ public class App {
             bubble.Ordenar(cobaia);
 
             cobaia = vetor.clone();
-            mostraVetor(cobaia);
             insertion.Ordenar(cobaia);
 
             cobaia = vetor.clone();
-            mostraVetor(cobaia);
             merge.Ordenar(cobaia);
 
             cobaia = vetor.clone();
-            mostraVetor(cobaia);
             count.Ordenar(cobaia);
         }
 
