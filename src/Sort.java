@@ -1,18 +1,18 @@
 public class Sort {
 
-    private int trocas;
-    private int comparacoes;
+    private long trocas;
+    private long comparacoes;
     //*** Construtor ***
     public Sort() {
         this.trocas = 0;
         this.comparacoes = 0;
     }
     //*** Gets ***
-    public int getComparacoes() {
+    public long getComparacoes() {
         return comparacoes;
     }
 
-    public int getTrocas() {
+    public long getTrocas() {
         return trocas;
     }
     //*** Metodos ***
@@ -29,12 +29,6 @@ public class Sort {
 
     public void incrementaComparacoes(){
         comparacoes++;
-    }
-
-    public void mostraVetor(int [] vetor){
-        for (int i = 0; i < vetor.length; i++) {
-            System.out.println(vetor[i]);
-        }
     }
 
     public void Ordenar(int [] vetor){}

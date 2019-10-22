@@ -13,29 +13,33 @@ public class Merge extends Sort {
         }
     }
 
-    public void Intercala(int[] A, int p, int q, int r) {
-        int B[] = new int[A.length];
+    public void Intercala(int[] vetor, int p, int q, int r) {
+        int helper[] = new int[vetor.length];
         for (int k = p; k <= r; k++) {
-            B[k] = A[k];
-            incrementaComparacoes();
+            helper[k] = vetor[k];
+            incrementaTrocas();
         }
         int i = p;
         int j = q + 1;
         for (int k = p; k <= r; k++) {
-            if (i > q) {
-                A[k] = B[j++];
-                incrementaComparacoes();
-            } else if (j > r) {
-                A[k] = B[i++];
-                incrementaComparacoes();
-            } else if (B[i] < B[j]) {
-                A[k] = B[i++];
-                incrementaComparacoes();
-            } else {
-                A[k] = B[j++];
-                incrementaComparacoes();
-            }
             incrementaComparacoes();
+            if (i > q) {
+                vetor[k] = helper[j++];
+                incrementaTrocas();
+            } 
+            else incrementaComparacoes(); 
+            if (j > r) {
+                vetor[k] = helper[i++];
+                incrementaTrocas();
+            } 
+            else incrementaComparacoes(); 
+            if (helper[i] < helper[j]) {
+                vetor[k] = helper[i++];
+                incrementaTrocas();
+            } else {
+                vetor[k] = helper[j++];
+                incrementaTrocas();
+            }
         }
     }
     
