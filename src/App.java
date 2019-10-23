@@ -8,8 +8,6 @@ public class App {
         Merge merge = new Merge();
         Count count = new Count();
 
-        System.out.println("Ola");
-
         System.out.println("------------------ Calculando vetor de 1000 posiçoes . . . ------------------");
         int[] vetor = new int[1000];
         int[] cobaia = new int[vetor.length];
@@ -47,8 +45,11 @@ public class App {
         System.out.println("Media das comparações = " + (count.getComparacoes()) / 5);
         System.out.println("Media das trocas = " + (count.getTrocas()) / 5);
 
-
-
+        bubble.zerar();
+        insertion.zerar();
+        merge.zerar();
+        count.zerar();
+        
         System.out.println("------------------ Calculando vetor de 5000 posiçoes . . . ------------------");
         vetor = new int[5000];
         cobaia = new int[vetor.length];
@@ -58,13 +59,17 @@ public class App {
                 vetor[j] = j;
             }
             embaralhar(vetor);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             bubble.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             insertion.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             merge.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             count.Ordenar(cobaia);
         }
 
@@ -82,6 +87,10 @@ public class App {
         System.out.println("Media das comparações = " + (count.getComparacoes()) / 5);
         System.out.println("Media das trocas = " + (count.getTrocas()) / 5);
 
+        bubble.zerar();
+        insertion.zerar();
+        merge.zerar();
+        count.zerar();
 
         System.out.println("------------------ Calculando vetor de 10000 posiçoes . . . ------------------");
         vetor = new int[10000];
@@ -92,13 +101,17 @@ public class App {
                 vetor[j] = j;
             }
             embaralhar(vetor);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             bubble.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             insertion.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             merge.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             count.Ordenar(cobaia);
         }
 
@@ -116,6 +129,10 @@ public class App {
         System.out.println("Media das comparações = " + (count.getComparacoes()) / 5);
         System.out.println("Media das trocas = " + (count.getTrocas()) / 5);
 
+        bubble.zerar();
+        insertion.zerar();
+        merge.zerar();
+        count.zerar();
 
         System.out.println("------------------ Calculando vetor de 50000 posiçoes . . . ------------------");
         vetor = new int[50000];
@@ -126,13 +143,17 @@ public class App {
                 vetor[j] = j;
             }
             embaralhar(vetor);
-            cobaia = vetor;
+            
+            cobaia = vetor.clone();
             bubble.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             insertion.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             merge.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             count.Ordenar(cobaia);
         }
 
@@ -150,7 +171,10 @@ public class App {
         System.out.println("Media das comparações = " + (count.getComparacoes()) / 5);
         System.out.println("Media das trocas = " + (count.getTrocas()) / 5);
 
-
+        bubble.zerar();
+        insertion.zerar();
+        merge.zerar();
+        count.zerar();
 
         System.out.println("------------------ Calculando vetor de 100000 posiçoes . . . ------------------");
         vetor = new int[100000];
@@ -161,13 +185,17 @@ public class App {
                 vetor[j] = j;
             }
             embaralhar(vetor);
-            cobaia = vetor;
+            
+            cobaia = vetor.clone();
             bubble.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             insertion.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             merge.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             count.Ordenar(cobaia);
         }
 
@@ -185,6 +213,10 @@ public class App {
         System.out.println("Media das comparações = " + (count.getComparacoes()) / 5);
         System.out.println("Media das trocas = " + (count.getTrocas()) / 5);
 
+        bubble.zerar();
+        insertion.zerar();
+        merge.zerar();
+        count.zerar();
 
         System.out.println("------------------ Calculando vetor de 500000 posiçoes . . . ------------------");
         vetor = new int[500000];
@@ -195,13 +227,17 @@ public class App {
                 vetor[j] = j;
             }
             embaralhar(vetor);
-            cobaia = vetor;
+            
+            cobaia = vetor.clone();
             bubble.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             insertion.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             merge.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             count.Ordenar(cobaia);
         }
 
@@ -219,6 +255,10 @@ public class App {
         System.out.println("Media das comparações = " + (count.getComparacoes()) / 5);
         System.out.println("Media das trocas = " + (count.getTrocas()) / 5);
 
+        bubble.zerar();
+        insertion.zerar();
+        merge.zerar();
+        count.zerar();
 
         System.out.println("------------------ Calculando vetor de 1000000 posiçoes . . . ------------------");
         vetor = new int[1000000];
@@ -229,13 +269,17 @@ public class App {
                 vetor[j] = j;
             }
             embaralhar(vetor);
-            cobaia = vetor;
+            
+            cobaia = vetor.clone();
             bubble.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             insertion.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             merge.Ordenar(cobaia);
-            cobaia = vetor;
+
+            cobaia = vetor.clone();
             count.Ordenar(cobaia);
         }
 
@@ -252,7 +296,6 @@ public class App {
         System.out.println("COUNTSORT:");
         System.out.println("Media das comparações = " + (count.getComparacoes()) / 5);
         System.out.println("Media das trocas = " + (count.getTrocas()) / 5);
-
     }
 
     public static void embaralhar(int[] vetor) {
@@ -277,5 +320,4 @@ public class App {
             System.out.println(vetor[i]);
         }
     }
-
 }

@@ -31,6 +31,11 @@ public class Sort {
         comparacoes++;
     }
 
+    public void zerar(){
+        this.comparacoes = 0;
+        this.trocas = 0;
+    }
+
     public void Ordenar(int [] vetor){}
     
 }
