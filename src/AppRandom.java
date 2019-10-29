@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class App {
+public class AppRandom {
     public static void main(String[] args) {
 
         Random random = new Random();
@@ -8,7 +8,8 @@ public class App {
         Insertion insertion = new Insertion();
         Merge merge = new Merge();
         Count count = new Count();
-        double inicio, fim;
+        double inicio, fim; // Variaveis para calcular o tempo
+
         System.out.println("------------------ Calculando vetor de 1000 posiçoes . . . ------------------");
         int[] vetor = new int[1000];
         int[] cobaia = new int[vetor.length];
