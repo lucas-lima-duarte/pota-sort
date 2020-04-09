@@ -9,7 +9,7 @@ public class AppCrescente {
         Count count = new Count();
         double inicio, fim; // Variaveis para calcular o tempo
 
-        System.out.println("------------------ Calculando vetor de 1000 posiçoes . . . ------------------");
+        System.out.println("------------------ Calculando vetor de 100 posiçoes . . . ------------------");
         int[] vetor = new int[1000];
         int[] cobaia = new int[vetor.length];
 
